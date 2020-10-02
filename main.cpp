@@ -27,7 +27,7 @@ int main() {
   std::cout << "Expected: [dora, eichler, emma, ruth, ziegellaub]" << std::endl;
 
   std::vector<int> insert;
-  insert = {1,2,5,4,9,6,7};
+  insert = {9,2,5,4,1,6,7};
   InsertionSort(insert);
-  std::cout << insert[3];
+  std::cout << insert[0];
 }

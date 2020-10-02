@@ -35,9 +35,7 @@ void InsertionSort_helper(std::vector<int>& v, int size){
     v[move + 1] = v[move];
     move--;
   }
-  v[move + 1] = end;
-
-  
+  v[move + 1] = end;  
 }
 void InsertionSort(std::vector<int>& v){
   InsertionSort_helper(v, v.size());
