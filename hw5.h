@@ -20,5 +20,4 @@ void MergeSort(std::vector<std::string> &vec);
 
 
 
-
 #endif /* __HW5_H__ */
