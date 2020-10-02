@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <string>
 #include "hw5.h"
 
 void print(std::vector<std::string> &v) {
@@ -17,9 +18,9 @@ void print(std::vector<std::string> &v) {
 }
 
 int main() {
-  std::vector<std::string> v;
+  std::vector<std::string> v = {"emma", "dora", "ruth", "ziegellaub", "eichler"};
 
-  v = {"emma", "dora", "ruth", "ziegellaub", "eichler"};
+  //v = {"emma", "dora", "ruth", "ziegellaub", "eichler"};
   std::cout << "Case 1: ";
   //MergeSort(v);
   BubbleSort(v);
