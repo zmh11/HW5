@@ -25,4 +25,9 @@ int main() {
   BubbleSort(v);
   print(v);
   std::cout << "Expected: [dora, eichler, emma, ruth, ziegellaub]" << std::endl;
+
+  std::vector<int> insert;
+  insert = {1,2,5,4,9,6,7};
+  InsertionSort(insert);
+  std::cout << insert[3];
 }

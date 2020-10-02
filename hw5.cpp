@@ -20,3 +20,25 @@ void BubbleSort(std::vector<std::string> &vec){
     }
   }
 } 
+
+/***
+ * 
+ **/
+void InsertionSort_helper(std::vector<int>& v, int size){
+  if(size <= 1)
+    return;
+  InsertionSort_helper(v, size-1);
+  int end = v[size - 1];
+  int move = size - 2;
+
+  while (move >= 0 && end < v[move]){
+    v[move + 1] = v[move];
+    move--;
+  }
+  v[move + 1] = end;
+
+  
+}
+void InsertionSort(std::vector<int>& v){
+  InsertionSort_helper(v, v.size());
+}
