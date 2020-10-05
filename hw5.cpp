@@ -9,7 +9,7 @@
  *  vector[a] = vector[b]
  *  vector[b] = temp 
  **/
-void Swap(std::vector<std::string> &vec, int a, int b){
+static void Swap(std::vector<std::string> &vec, int a, int b){
   std::string temp = vec[a];
   vec[a] = vec[b];
   vec[b] = temp;
@@ -44,7 +44,7 @@ void BubbleSort(std::vector<std::string> &vec){
  *    k = k-1}
  *    vector[k+1] = key}
  **/
-void InsertionSort_helper(std::vector<int>& v, int size){
+static void InsertionSort_helper(std::vector<int>& v, int size){
   if( size <= 1 )
     return;
   InsertionSort_helper(v, size-1);
@@ -73,7 +73,7 @@ void InsertionSort(std::vector<int>& v){
  *  place any remaning in subvectors at end of vector
  *  
  **/
-void Merge(std::vector<std::string> &vec, int l, int m, int r){
+static void Merge(std::vector<std::string> &vec, int l, int m, int r){
   int ls = m - l + 1;
   int rs = r - m;
 
@@ -123,7 +123,7 @@ void Merge(std::vector<std::string> &vec, int l, int m, int r){
  *  Mearge (vector,  l,  middle, r)
  * }
  **/
-void MergeSort_helper(std::vector<std::string> &vec, int l, int r){
+static void MergeSort_helper(std::vector<std::string> &vec, int l, int r){
   if ( l<r ){
     int middle = l + (r-l)/2; 
     MergeSort_helper(vec,  l,  middle);
